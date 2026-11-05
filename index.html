@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🎓 Campus<span>Connect</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#register">Registration</a>
+        <a href="#students">Students</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a href="#register" class="nav-btn">Get Started ↗</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">✦ YOUR FUTURE STARTS HERE</span>
+        <h1>Welcome to Your <span>Academic</span> Journey.</h1>
+        <p>One platform to register, connect, and begin your successful college journey.</p>
+        <div class="hero-buttons">
+            <a href="#register" class="primary-btn">Register Now →</a>
+            <a href="#about" class="secondary-btn">Explore More</a>
+        </div>
+        <div class="stats">
+            <div><h2>100%</h2><p>Digital Process</p></div>
+            <div><h2>24/7</h2><p>Easy Access</p></div>
+            <div><h2>Secure</h2><p>Student Details</p></div>
+        </div>
+    </div>
+
+    <div class="hero-art">
+        <div class="circle"></div>
+        <div class="student-card">
+            <div class="cap">🎓</div>
+            <h2>Start Learning</h2>
+            <p>Your dreams. Your journey. Your success.</p>
+            <div class="progress"><span></span></div>
+            <small>Future starts today ✨</small>
+        </div>
+        <div class="float-icon one">📚</div>
+        <div class="float-icon two">⭐</div>
+        <div class="float-icon three">💡</div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <span class="tag">ABOUT OUR PORTAL</span>
+    <h2>Everything Begins with <span>Registration</span></h2>
+    <p class="section-desc">A simple and smart way to manage student registration details.</p>
+</section>
+
+<section class="features section" id="features">
+    <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Easy Registration</h3>
+        <p>Complete your registration through a simple online form.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Student Details</h3>
+        <p>Keep your academic and personal information organized.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Quick Process</h3>
+        <p>Register quickly with instant form validation.</p>
+    </div>
+</section>
+
+<section class="register-section" id="register">
+
+    <div class="form-info">
+        <span class="tag">JOIN OUR CAMPUS</span>
+        <h2>Let's Make Your <span>Future</span> Brighter!</h2>
+        <p>Fill in your details to complete student registration.</p>
+        <div class="info-item">✓ Simple registration process</div>
+        <div class="info-item">✓ User-friendly interface</div>
+        <div class="info-item">✓ Instant confirmation</div>
+        <div class="info-item">✓ View registered students</div>
+    </div>
+
+    <div class="form-card">
+        <h2>Student Registration</h2>
+        <p class="form-subtitle">Enter your information below</p>
+
+        <form id="studentForm">
+            <div class="input-grid">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>USN</label>
+                    <input type="text" id="usn" placeholder="Enter your USN" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="10-digit mobile number" maxlength="10" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Department</label>
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>CSE</option>
+                        <option>ISE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>Mechanical</option>
+                        <option>Civil</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Semester</label>
+                    <select id="semester" required>
+                        <option value="">Select Semester</option>
+                        <option>1st Semester</option>
+                        <option>2nd Semester</option>
+                        <option>3rd Semester</option>
+                        <option>4th Semester</option>
+                        <option>5th Semester</option>
+                        <option>6th Semester</option>
+                        <option>7th Semester</option>
+                        <option>8th Semester</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="gender">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Complete Registration →</button>
+            <button type="reset" class="reset-btn">Clear Form</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+
+<!-- REGISTERED STUDENTS SECTION -->
+<section class="students-section" id="students">
+    <span class="tag">STUDENT RECORDS</span>
+    <h2>Registered <span>Students</span></h2>
+    <p class="section-desc">View all successfully registered students.</p>
+
+    <div class="student-count">
+        Total Registered Students: <strong id="totalStudents">0</strong>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Name</th>
+                    <th>USN</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentList">
+            </tbody>
+        </table>
+    </div>
+
+    <p id="emptyMessage">No students registered yet. Register your first student!</p>
+</section>
+
+<footer id="contact">
+    <div class="logo">🎓 Campus<span>Connect</span></div>
+    <p>Building tomorrow, one student at a time.</p>
+    <p class="copyright">© 2026 CampusConnect | Student Registration Portal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

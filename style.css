@@ -1,0 +1,518 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8ff;
+    color: #252344;
+}
+
+.navbar {
+    min-height: 80px;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px #25234412;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #35227e;
+}
+
+.logo span, .hero span, .section span,
+.form-info span, .students-section span {
+    color: #8055ed;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #55516d;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #8055ed;
+}
+
+.nav-btn, .primary-btn {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(120deg, #8055ed, #5736c9);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.hero {
+    min-height: 580px;
+    padding: 75px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: linear-gradient(120deg, #f0ebff, #f9f7ff, #e9f1ff);
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.tag {
+    display: inline-block;
+    color: #8055ed;
+    background: #ebe4ff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.hero-content > p, .form-info > p {
+    color: #77738b;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.primary-btn:hover, .nav-btn:hover {
+    box-shadow: 0 8px 20px #8055ed55;
+}
+
+.secondary-btn {
+    text-decoration: none;
+    color: #5736c9;
+    padding: 11px 20px;
+    border: 1px solid #cfc2f7;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.stats h2 {
+    color: #5736c9;
+    font-size: 21px;
+}
+
+.stats p {
+    color: #77738b;
+    font-size: 11px;
+}
+
+.hero-art {
+    position: relative;
+    width: 360px;
+    height: 340px;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d8c9ff, #a9baff);
+}
+
+.student-card {
+    position: relative;
+    z-index: 2;
+    width: 260px;
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 50px #42318a22;
+}
+
+.cap {
+    font-size: 60px;
+}
+
+.student-card p {
+    color: #88839b;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.student-card small {
+    color: #8055ed;
+}
+
+.progress {
+    height: 8px;
+    background: #eee9fc;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.progress span {
+    display: block;
+    width: 75%;
+    height: 100%;
+    background: #8055ed;
+    border-radius: 10px;
+}
+
+.float-icon {
+    position: absolute;
+    z-index: 3;
+    background: white;
+    padding: 13px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #42318a22;
+    font-size: 24px;
+}
+
+.one { top: 20px; left: 0; }
+.two { top: 40px; right: 0; }
+.three { bottom: 10px; left: 20px; }
+
+.section {
+    text-align: center;
+    padding: 75px 9% 25px;
+}
+
+.section h2, .students-section h2 {
+    margin: 20px 0 10px;
+    font-size: 30px;
+}
+
+.section-desc {
+    color: #858197;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 80px;
+}
+
+.feature-card {
+    background: white;
+    padding: 32px 22px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px #29204d0b;
+    transition: .3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #8055ed22;
+}
+
+.feature-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #858197;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.register-section {
+    background: linear-gradient(130deg, #30205e, #49328e);
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.form-info h2 {
+    font-size: 36px;
+    color: white;
+    margin: 25px 0;
+}
+
+.form-info > p {
+    color: #d0c9e9;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    color: white;
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+.form-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px #10072e55;
+}
+
+.form-card h2 {
+    font-size: 24px;
+}
+
+.form-subtitle {
+    color: #9690a7;
+    font-size: 13px;
+    margin: 8px 0 25px;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.input-group label, .gender > label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e4e0ee;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 12px;
+    background: #fcfbff;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #8055ed;
+    box-shadow: 0 0 0 3px #8055ed18;
+}
+
+.gender {
+    margin: 22px 0;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.gender-options label {
+    font-weight: 400;
+}
+
+.submit-btn, .reset-btn {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.submit-btn {
+    color: white;
+    background: linear-gradient(120deg, #8055ed, #5736c9);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+}
+
+.reset-btn {
+    background: #f0edfa;
+    color: #5736c9;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* REGISTERED STUDENTS */
+
+.students-section {
+    padding: 80px 6%;
+    text-align: center;
+}
+
+.student-count {
+    display: inline-block;
+    background: #ebe4ff;
+    color: #5736c9;
+    padding: 12px 22px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px #29204d10;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+th {
+    background: #5736c9;
+    color: white;
+    padding: 15px 12px;
+    font-size: 12px;
+}
+
+td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #eeeaf7;
+    font-size: 12px;
+}
+
+tr:hover td {
+    background: #f8f5ff;
+}
+
+.delete-btn {
+    background: #ffe6e6;
+    color: #d83232;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#emptyMessage {
+    color: #858197;
+    font-size: 13px;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #21163f;
+    color: white;
+}
+
+footer p {
+    color: #c5bddc;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff22;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+@media(max-width: 950px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        justify-content: center;
+    }
+
+    .register-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 6%;
+    }
+
+    .hero-art {
+        width: 100%;
+    }
+
+    .hero-buttons, .stats {
+        justify-content: center;
+    }
+
+    .stats {
+        gap: 20px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 22px;
+    }
+
+    .gender-options {
+        flex-wrap: wrap;
+    }
+
+    .form-info {
+        text-align: center;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 11px;
+    }
+}
